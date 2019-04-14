@@ -1,2 +1,2 @@
-# portfoli_website
+# portfolio_website
 this is the source code to my portfolio which is currently in development
