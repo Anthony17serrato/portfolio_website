@@ -1,0 +1,36 @@
+.header {
+	height: 95vh;
+	padding-top: 8rem;
+
+    &__intro {
+        color: $color-white;
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: bold;
+        font-size: 3.6rem;
+        display: block;
+        padding-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70%;
+        animation: moveInRight 1s ease-out;
+    }
+
+    &__self-portrait {
+        max-width: 15rem;
+        max-height: 15rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        animation: moveInLeft 1s ease-out;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 5.5rem;
+    }
+}

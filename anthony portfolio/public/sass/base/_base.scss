@@ -1,0 +1,36 @@
+/*browser wont add any margins*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;/*set the property to inherit*/
+}
+
+html{
+    //this defines what 1 rem is
+    font-size: 62.5%;/*100/16pixels(default)*/
+
+    @include respond(tab-land) {
+		font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+	}
+	@include respond(tab-port) {
+		font-size: 50%; //1rem = 8px, 8/16 = 50%
+	}
+	// @include respond(phone) {
+	// 	font-size: 30%; //1rem = 4.8px, 4.8/16 = 30%
+	// }
+	@include respond(big-desktop) {
+		font-size: 75%;	//1rem = 12, 12/16
+	}
+}
+
+body {
+	padding: 3rem;
+	
+    box-sizing: border-box; /*prevents margin and padding from being added to height of element*/
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
+}

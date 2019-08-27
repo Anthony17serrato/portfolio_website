@@ -10,16 +10,47 @@
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- landing block -->
-	<section class="intro">
-		<!-- Landing card -->
-		<img src="img/self_image.jpg" class="rounded-circle self_portrait" alt="Anthony Serrato">
-		<h1 class="intro__header">Hi, I'm Anthony. I build & design Websites, Mobile Apps and Much More!</h1>	
+	<div class="navigation">
+            <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
 
-		<div class="learn-more">
-			<p class="learn-more__hover-me">Learn More About What I Do</p>
-			<i class="learn-more__hover-me material-icons">keyboard_arrow_down</i>
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Me</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Personal Projects</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Skills &amp; Resume</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>My Lab's</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Business Inquiries</a></li>
+                </ul>
+            </nav>
+        </div>
+
+	<header class="header">
+
+		<div class="header__logo-box">
+            <img src="img/What_U_Want_logo.png" alt"Logo" class="header__logo">
+        </div>
+
+		<div class="bg-video">
+			<video class="bg-video__content" autoplay muted loop>
+				<source src="img/love_coding.mp4" type="video/mp4">
+				<source src="img/love_coding.webm" type="video/webm">
+				Your browser is not supported!
+			</video>
 		</div>
+		<img src="img/self_image.jpg" class="rounded-circle header__self-portrait" alt="Anthony Serrato">
+		<h1 class="header__intro">Hi, I'm Anthony. I build & design Websites, Mobile Apps and Much More!</h1>	
+	</header>
+
+	<section class="section-labs">
+		<button href="/natours">
+			Natouors landing page
+		</button>
 	</section>
 </body>
 </html>

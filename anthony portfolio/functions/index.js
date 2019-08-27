@@ -22,5 +22,12 @@ app.get("/", function(req, res){
 	//res.send(`${Date.now()}`);
 	res.render("landing");
 });
+//lab natours
+app.get("/natours", function(req, res){
+	//make web app faster by using cache
+	res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
+	//res.send(`${Date.now()}`);
+	res.render("index");
+});
 
 exports.app = functions.https.onRequest(app);
