@@ -1,56 +1,118 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Anthony Serrato</title>
-	<link rel="shortcut icon" type="image/png" href="img/What_U_Want_logo.png">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-</head>
-<body>
-	<div class="navigation">
-            <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
-
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-
-            <div class="navigation__background">&nbsp;</div>
-
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Me</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Personal Projects</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Skills &amp; Resume</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>My Lab's</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Business Inquiries</a></li>
-                </ul>
-            </nav>
-        </div>
-
+ <% include ../partials/header %>
 	<header class="header">
 
 		<div class="header__logo-box">
             <img src="img/What_U_Want_logo.png" alt"Logo" class="header__logo">
         </div>
-
+        <img src="img/self_image.jpg" class="rounded-circle header__self-portrait" alt="Anthony Serrato">
+		<h1 class="header__intro">Hi, I'm Anthony. I build & design Websites, Mobile Apps and Much More!</h1>
 		<div class="bg-video">
-			<video class="bg-video__content" autoplay muted loop>
+			<video class="bg-video__content" poster="img/video_loading.jpg" autoplay muted loop>
 				<source src="img/love_coding.mp4" type="video/mp4">
 				<source src="img/love_coding.webm" type="video/webm">
 				Your browser is not supported!
 			</video>
 		</div>
-		<img src="img/self_image.jpg" class="rounded-circle header__self-portrait" alt="Anthony Serrato">
-		<h1 class="header__intro">Hi, I'm Anthony. I build & design Websites, Mobile Apps and Much More!</h1>	
+			
 	</header>
 
-	<section class="section-labs">
-		<button href="/natours">
-			Natouors landing page
-		</button>
+
+
+	<section class="section-projects">
+	<div class="container-fluid">
+		<div class="row">
+		    <div class="col">
+		      
+		    </div>
+		    <div class="col-sm-8">
+		      <h1>My Projects:</h1>
+		    </div>
+		    <div class="col">
+		      
+		    </div>
+		</div>
+
+		<div class="row">
+		    <div class="col-sm-12 col-md-6 col-lg-4">
+		      	<div class="card section-projects__card">
+				  <img class="card-img-top" src="img/natourshead.png" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Natours Landing Page</h5>
+				    <p class="card-text">Natours is a front end website I created for my course Advanced CSS and SASS, it was written in html, sass and javascript. click learn more for more datails on the website.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item">Platform: Web</li>
+				    <li class="list-group-item">Technologies: Sass</li>
+				    <li class="list-group-item">Date developed: 2019</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="/natours" class="card-link">View Project</a>
+				    <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModal">Learn More</a>
+				  </div>
+				</div>
+		    </div>
+		    <div class="col-sm-12 col-md-6 col-lg-4">
+			    <div class="card section-projects__card">
+				  <img class="card-img-top" src="img/musicapi.png" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Music API microservices</h5>
+				    <p class="card-text">Music API is a set of four backend web microservices developed for my web development class.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item">Platform: Web</li>
+				    <li class="list-group-item">Technologies: Python, SQL, NOSQL, Microservices</li>
+				    <li class="list-group-item">Date developed: 2019</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="/musicapi" class="card-link">View Project</a>
+				    <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModal">Learn More</a>
+				  </div>
+				</div>
+		    </div>
+		    <div class="col-sm-12 col-md-6 col-lg-4">
+		      	<div class="card section-projects__card">
+				  <img class="card-img-top" src="img/gpimg.png" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">Gym Pal</h5>
+				    <p class="card-text">Gym Pal is an Android application I have been working on since mid 2017, With over 500 hours of development time it is the largest project I have ever taken on. The Application is available for download on the google play store.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+				    <li class="list-group-item">Platform: Android</li>
+				    <li class="list-group-item">Technologies: Android SDK</li>
+				    <li class="list-group-item">Date developed: 2017-present</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="/gp" class="card-link">View Project</a>
+				    <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModal">Learn More</a>
+				  </div>
+				</div>
+		    </div>
+		</div>
+	</div>
+		
 	</section>
-</body>
-</html>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+	    <h5 class="modal-title" id="exampleModalLabel">Natours Landing Page</h5>
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	      <span aria-hidden="true">&times;</span>
+	    </button>
+	  </div>
+	  <div class="modal-body">
+	    This string to contain detailed information on the project...
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	    <button type="button" class="btn btn-primary">Share</button>
+	  </div>
+	</div>
+	</div>
+	</div>
+
+ <% include ../partials/footer %>
+
+	

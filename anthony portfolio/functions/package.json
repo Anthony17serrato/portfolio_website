@@ -1,33 +1,28 @@
 {
-  "name": "portfolio",
+  "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
     "serve": "firebase serve --only functions",
     "shell": "firebase functions:shell",
-    "start": "webpack-dev-server",
+    "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
   },
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "firebase": "^5.11.1",
-    "firebase-admin": "~7.0.0",
-    "firebase-functions": "^2.2.0"
+    "firebase": "^7.13.2",
+    "firebase-admin": "^8.9.0",
+    "firebase-functions": "^3.3.0",
+    "grpc": "^1.24.2",
+    "node-gyp": "^6.1.0",
+    "request": "^2.88.2"
   },
-  "private": true,
   "devDependencies": {
-    "css-loader": "^1.0.0",
-    "extract-loader": "^3.0.0",
-    "file-loader": "^2.0.0",
-    "firebase-functions-test": "^0.1.6",
-    "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0",
-    "webpack": "^3.12.0",
-    "webpack-dev-server": "^2.11.3"
+    "firebase-functions-test": "^0.1.6"
   },
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Anthony Serrato",
-  "license": "ISC"
+  "private": true
 }

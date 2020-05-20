@@ -1,0 +1,11 @@
+.footer {
+	&__box1 {
+		padding-top: 2rem;
+		background-color: $color-primary;
+		color: $color-white;
+	}
+	&__box2 {
+		background-color: $color-secondary;
+		color: $color-white;
+	}
+}

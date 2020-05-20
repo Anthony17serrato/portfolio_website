@@ -1,0 +1,46 @@
+ <% include ../partials/header %>
+ <section class ="resume">
+ 	<div class="container-fluid">
+	  	<div class="row">
+	  		<div class="col-sm-12 col-md-6 col-lg-3">
+	  			<div class="card resume__skills text-white bg-primary">
+	  				<div class="card-body">
+	  				<h1 class="resume__skills">
+		      		My Skills
+		      		</h1>
+		      		<form class="form-inline mr-auto">
+  						<input class="form-control mr-sm-2 mt-1" type="text" placeholder="Find Skill" aria-label="Search">
+  						<button type="button" class="btn btn-light mt-1">Search</button>
+					</form>
+					</div>
+	  			</div>
+		      	
+		      	<% for (var i = 0; i < myskills.length ; i++) { %>
+			      	<span class="card chip">
+	  					<div>
+	    					<%= myskills[i] %>
+	  					</div>
+					</span>
+				<% } %>
+		    </div>
+		    <div class="col-sm-12 col-md-6 col-lg-6">
+		      	<div class="resume__res-box">
+					<a class="resume__res-down" href="/resumedownload">
+							Download as PDF
+					</a>
+					<img src="img/resume.png" alt"resume" class="resume__image">
+				</div>
+		    </div>
+		    <div class="col-sm-12 col-md-12 col-lg-3">
+		      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="anthony-serrato-483a87183"><a class="LI-simple-link" href='https://www.linkedin.com/in/anthony-serrato-483a87183?trk=profile-badge'>Anthony Serrato</a></div>
+		      <span class="ghbutton">
+		      <!-- Place this tag where you want the button to render. -->
+				<a class="github-button" href="https://github.com/Anthony17serrato" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Follow @Anthony17serrato on GitHub">Follow @Anthony17serrato</a>
+			  </span>
+		    </div>
+		    
+	  	</div>
+	</div>
+ </section>
+	
+  <% include ../partials/footer %>
