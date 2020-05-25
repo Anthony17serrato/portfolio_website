@@ -22,13 +22,7 @@
 	<div class="container-fluid">
 		<div class="row">
 		    <div class="col">
-		      
-		    </div>
-		    <div class="col-sm-8">
-		      <h1>My Projects:</h1>
-		    </div>
-		    <div class="col">
-		      
+		      <h1 style="text-align: center">My Projects</h1>
 		    </div>
 		</div>
 
@@ -90,6 +84,32 @@
 		</div>
 	</div>
 		
+	</section>
+
+	<section class="section-demos">
+	<div class="container-fluid">
+		<div class="row">
+		    <div class="col">
+		      <h1 style="text-align: center">Live Demos</h1>
+		    </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<img class="child section-demos__device show-on-scroll is-visible" src="img/device_frame.png" alt="Card image cap">
+				
+				<video class="parent show-on-scroll is-visible" poster="img/video_loading.jpg" autoplay muted loop>
+					<source src="img/MealPal2.mp4" type="video/mp4">
+					<source src="img/MealPal2.webm" type="video/webm">
+					Your browser is not supported!
+				</video>
+				
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<h2>Meal Pal</h2>
+				<p>Meet Meal Pal a user ranked recipe search app and an extension to my most popular app Gym Pal. For this app I wanted to create something interesting that I myself would use. The concept was to make an app that accesses millions of recipes and then ranks them according to which recipes have been saved the most by users, it also features a trending section that displays recipes which have been saved a lot recently. The application is written in Kotlin(a first for me) and features bleeding edge android components such as ViewPager2 and Jetpack Compose. The user interface is based on Google's new material design. Meal Pal connects to Edamame recipe search API which contains over 2 million food recipes, once the recipes are received from the api Meal Pal connects to my Firebase real-time database server which contains rank information for popular recipes. Once the recipes and rank are received through an AsyncTask (Background thread) the recipes are organized according to their rank(saves) and the data is loaded to the user interface.</p>
+			</div>
+		</div>
+	</div>
 	</section>
 
 	<!-- Modal -->
